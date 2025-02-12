@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.eazybytes.cards</groupId>
-	<artifactId>eazybytes-bank-cards-micro-service</artifactId>
+	<artifactId>cards</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>eazybytes-bank-cards-micro-service</name>
 	<description>Demo project for Spring Boot</description>
