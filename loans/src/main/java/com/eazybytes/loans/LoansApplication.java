@@ -20,13 +20,13 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 				description = "EazyBank Loans microservice REST API Documentation",
 				version = "v1",
 				contact = @Contact(
-						name = "Madan Reddy",
-						email = "tutor@eazybytes.com",
-						url = "https://www.eazybytes.com"
+						name = "Sai Teja",
+						email = "info@saiteja.io",
+						url = "saiteja.io"
 				),
 				license = @License(
 						name = "Apache 2.0",
-						url = "https://www.eazybytes.com"
+						url = "https://www.apache.org/licenses/LICENSE-2.0"
 				)
 		),
 		externalDocs = @ExternalDocumentation(

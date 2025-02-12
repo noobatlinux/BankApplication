@@ -3,6 +3,7 @@ package com.eazybytes.loans.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -14,11 +15,9 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
-@MappedSuperclass
-@EntityListeners(AuditingEntityListener.class)
-@Getter
-@Setter
-@ToString
+@MappedSuperclass //The BaseEntity class should be annotated with @MappedSuperclass so that JPA recognizes it as a parent class for inheritance.
+@EntityListeners(AuditingEntityListener.class) //helps create and assign timestamp and user for createdAt, updatedAt, createdBy and updatedBy
+@Data
 public class BaseEntity {
 
     @CreatedDate
