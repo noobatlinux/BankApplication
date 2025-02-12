@@ -21,7 +21,7 @@ public class CardsDto {
 
     @NotEmpty(message = "Card Number can not be a null or empty")
     @Pattern(regexp="(^$|[0-9]{12})",message = "CardNumber must be 12 digits")
-    @Schema(
+    @Schema( //swagger is used for documentation
             description = "Card Number of the customer", example = "100646930341"
     )
     private String cardNumber;
